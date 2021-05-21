@@ -1,0 +1,37 @@
+{
+  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Omni",
+  "workbench.iconTheme": "vscode-icons",
+  "debug.console.fontFamily": "Fira Code Retina",
+  "editor.fontFamily": "'Fira Code Retina', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 18,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  //"editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 10,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "prettier.singleQuote": true,
+  //"files.autoSave": "onFocusChange",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "start",
+  "tabnine.experimentalAutoImports": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

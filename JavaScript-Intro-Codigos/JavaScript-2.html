@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Introdução à Linguagem JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+alert("Aula de JavaScript!");
+
+function fechaJanela() {
+	if (confirm("Fechar a Janela?")) {
+		window.close();
+	}
+}
+
+function exibeDados() {
+	alert(navigator.userAgent);
+}
+</script>
+<h1>Aula de JavaScript</h1>
+<p>Clique no botão abaixo para ver a função sendo executada.</p>
+<button onclick="fechaJanela()">Fechar</button>
+<p>Passe o mouse sobre o botão abaixo para ver a data do sistema.</p>
+<button onmouseover="alert(Date())">Data e Hora</button>
+<p onmouseover="alert(navigator.userAgent)">Dados do Navegador.</p>
+<p onmouseover="exibeDados()">Dados do Navegador (código em função)</p>
+</body>
+</html>

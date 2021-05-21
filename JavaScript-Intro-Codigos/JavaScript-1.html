@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Introdução à Linguagem JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+
+alert("Aula de JavaScript!");
+
+function fechaJanela() {
+	if (confirm("Fechar a Janela?")) {
+		window.close();
+	}
+}
+
+function mexe(id, x) {
+	id.innerHTML = x;
+}
+
+function infoNavegador () {
+	var x , n = navigator ;
+	x = n.appCodeName + " <br> " + n.appName ;
+	x += " <br> " + n.language + " <br> " + n.onLine ;
+	x += " <br> " + n.appVersion + " <br> " + n.platform
+	+ " <br> " + n.cookieEnabled ;
+	document.getElementById("navegador").innerHTML = x ;
+}
+
+</script>
+<h1>Aula de JavaScript</h1>
+<p>Clique no botão abaixo para ver a função sendo executada.</p>
+<p onmouseover="mexe(this,10)" onmouseout="mexe(this , 'Antes eu era numero, agora sou texto!')">Palavra</p>
+<button onclick="infoNavegador()"> Clique aqui para saber informacoes sobre o navegador!</button>
+<p id="navegador"></p>
+</body>
+</html>

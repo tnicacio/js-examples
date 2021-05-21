@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		function adicionaPalavra(id) {
+			var palavra = prompt("Digite a palavra:");
+			var valor = parseInt(prompt("Quantas vezes a palavra irá se repetir?"));
+			for (i = 0; i < valor; i++) {
+				var todos = document.getElementsByTagName(id);
+				var tamanho = todos.length;
+				for (j = 0; j < tamanho; j++) {
+					todos[j].innerHTML += palavra + " ";
+				}
+			}
+		}
+		function apagaPalavra(id) {
+			var todos = document.getElementsByTagName(id);
+			var tamanho = todos.length;
+			for (i = 0; i < tamanho; i++) {
+				todos[i].innerHTML = "";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p id="conteudo"></p>
+	<p></p>
+	<p></p>
+	<button onclick="adicionaPalavra('p')">Adicionar</button>
+	<button onclick="apagaPalavra('p')">Limpar</button>
+</body>
+</html>

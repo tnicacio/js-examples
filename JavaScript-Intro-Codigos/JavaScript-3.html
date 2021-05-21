@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula JavaScript e jQuery</title>
+	<meta charset="utf-8">
+	<script>
+function calcula() {
+	var valor1 = document.getElementById("valor1").value;
+	var valor2 = document.getElementById("valor2").value;
+	var resultado = parseInt(valor1) + parseInt(valor2);
+	alert(resultado);
+}
+	</script>
+</head>
+<body>
+<form>
+	<input type="number" id="valor1" placeholder="Número"><br>
+	<input type="number" id="valor2" placeholder="Número"><br>
+	<button onclick="calcula()">Calcular</button>
+</form>
+</body>
+</html>
